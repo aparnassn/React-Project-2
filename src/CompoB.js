@@ -1,5 +1,6 @@
 import React from 'react'
-import CompoD from 'react'
+import CompoD from './CompoD'
+
 
 function CompoB() {
   return (

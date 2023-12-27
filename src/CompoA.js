@@ -1,17 +1,16 @@
 import React from "react";
-import CompoB from "react";
-import { CountContext } from "./App";
 import { useContext } from "react";
+import { CountContext } from "./Head";
 
 function CompoA() {
-    const cc = useContext(CountContext)
+  const c = useContext(CountContext)
   return (
     <div>
-        Component A
-        <CompoB/>
-      <button onClick={() => cc.countDispatch('increment')}>Increment</button>
-      <button onClick={() => cc.countDispatch('decrement')}>Decrement</button>
-      <button onClick={() => cc.countDispatch('reset')}>Reset</button>
+      Component A -{ c.countState}
+      
+      <button onClick={() => c.countDispatch("increment")}>Increment</button>
+      <button onClick={() => c.countDispatch("decrement")}>Decrement</button>
+      <button onClick={() => c.countDispatch("reset")}>Reset</button>
     </div>
   );
 }

@@ -9,6 +9,7 @@ import UseReducerOne from "./UseReducerOne";
 import MutipleUseReducer from './MutipleUseReducer';
 import CounterOne from './CounterOne';
 import UsingReducer from "./UsingReducer";
+import Head from "./Head";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -22,6 +23,7 @@ root.render(
       <Route path="/counterone" element={<CounterOne />} />
       <Route path="/samplereducer" element={<SampleReducer />} />
       <Route path="/usingreducer" element={<UsingReducer />} />
+      <Route path="/head" element={<Head />} />
       </Routes>
     </Router>
   </React.StrictMode>
