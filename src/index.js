@@ -16,8 +16,8 @@ import MyList from "./MyList";
 import ParentComponent from "./ParentComponent";
 import FocusInput from "./FocusInput";
 import HookTimer from "./HookTimer";
-import DocTitleOne from "./DocTitleOne";
-import DocTitleTwo from "./DocTitleTwo";
+import DocTitleOne from "./Components/DocTitleOne";
+import DocTitleTwo from "./Components/DocTitleTwo";
 import useDocumentTitle from "./Hooks/useDocumentTitle";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
