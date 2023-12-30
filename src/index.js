@@ -6,26 +6,47 @@ import reportWebVitals from "./reportWebVitals";
 import SampleReducer from "./SampleReducer";
 import { useState } from "react";
 import UseReducerOne from "./UseReducerOne";
-import MutipleUseReducer from './MutipleUseReducer';
-import CounterOne from './CounterOne';
+import MutipleUseReducer from "./MutipleUseReducer";
+import CounterOne from "./CounterOne";
 import UsingReducer from "./UsingReducer";
 import Head from "./Head";
+import ShopHead from "./ShopHead";
+import CandyDispenser from "./CandyDispenser";
+import MyList from "./MyList";
+import ParentComponent from "./ParentComponent";
+import FocusInput from "./FocusInput";
+import HookTimer from "./HookTimer";
+import DocTitleOne from "./DocTitleOne";
+import DocTitleTwo from "./DocTitleTwo";
+import useDocumentTitle from "./Hooks/useDocumentTitle";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Router>
+    {/* <useDocumentTitle/> */}
+    {/* <Router> */}
       {/* <App /> */}
-      <Routes>
-      <Route path="/reducerone" element={<UseReducerOne />} />
-      <Route path="/multiplereducer" element={<MutipleUseReducer/>} />
-      <Route path="/counterone" element={<CounterOne />} />
-      <Route path="/samplereducer" element={<SampleReducer />} />
-      <Route path="/usingreducer" element={<UsingReducer />} />
-      <Route path="/head" element={<Head />} />
+      <DocTitleOne/>
+          <DocTitleTwo/>
+      {/* <Routes>
+        <Route path="/reducerone" element={<UseReducerOne />} />
+        <Route path="/multiplereducer" element={<MutipleUseReducer />} />
+        <Route path="/counterone" element={<CounterOne />} />
+        <Route path="/samplereducer" element={<SampleReducer />} />
+        <Route path="/usingreducer" element={<UsingReducer />} />
+        <Route path="/head" element={<Head />} />
+        <Route path="/shophead" element={<ShopHead />} />
+        <Route path="/candies" element={<CandyDispenser />} />
+        <Route path="/mylist" element={<MyList />} />
+        <Route path="/parentcomponent" element={<ParentComponent />} />
+        <Route path="/focusinput" element={<FocusInput />} />
+        <Route path="/hooktimer" element={<HookTimer />} />
+        <Route path="/doctitleone" element={<DocTitleOne />} />
+        <Route path="/doctitletwo" element={<DocTitleTwo />} />
+        <Route path="/usedocumenttitle" element={<useDocumentTitle />} />
       </Routes>
-    </Router>
+    </Router> */}
   </React.StrictMode>
 );
 
