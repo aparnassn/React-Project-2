@@ -19,17 +19,20 @@ import HookTimer from "./HookTimer";
 import DocTitleOne from "./Components/DocTitleOne";
 import DocTitleTwo from "./Components/DocTitleTwo";
 import useDocumentTitle from "./Hooks/useDocumentTitle";
+import UserCardHead from "./UserCardHead"
+import UsingRefCode from "./UsingRefCode";
+import ShoppingHead from "./ShoppingCart/ShoppingHead";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     {/* <useDocumentTitle/> */}
-    {/* <Router> */}
+    <Router>
       {/* <App /> */}
-      <DocTitleOne/>
-          <DocTitleTwo/>
-      {/* <Routes>
+      {/* <DocTitleOne/>
+          <DocTitleTwo/> */}
+      <Routes>
         <Route path="/reducerone" element={<UseReducerOne />} />
         <Route path="/multiplereducer" element={<MutipleUseReducer />} />
         <Route path="/counterone" element={<CounterOne />} />
@@ -45,8 +48,12 @@ root.render(
         <Route path="/doctitleone" element={<DocTitleOne />} />
         <Route path="/doctitletwo" element={<DocTitleTwo />} />
         <Route path="/usedocumenttitle" element={<useDocumentTitle />} />
+        <Route path="/usercardhead" element={<UserCardHead/>}/>
+        <Route path="/usingrefcode" element={<UsingRefCode/>}/>
+        <Route path="/shoppingcart" element={<ShoppingHead/>}/>
+        
       </Routes>
-    </Router> */}
+    </Router>
   </React.StrictMode>
 );
 
