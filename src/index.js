@@ -21,7 +21,9 @@ import DocTitleTwo from "./Components/DocTitleTwo";
 import useDocumentTitle from "./Hooks/useDocumentTitle";
 import UserCardHead from "./UserCardHead"
 import UsingRefCode from "./UsingRefCode";
-import ShoppingHead from "./ShoppingCart/ShoppingHead";
+import Shopper from "./ShoppingCart/Shopper";
+import Register from "./ShoppingCart/Register";
+import UsingStyled from "./UsingStyled";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -50,7 +52,9 @@ root.render(
         <Route path="/usedocumenttitle" element={<useDocumentTitle />} />
         <Route path="/usercardhead" element={<UserCardHead/>}/>
         <Route path="/usingrefcode" element={<UsingRefCode/>}/>
-        <Route path="/shoppingcart" element={<ShoppingHead/>}/>
+        <Route path="/shopcart" element={<Shopper/>}/>
+        <Route path="/signup" element={<Register/>}/>
+        <Route path="/styled" element={<UsingStyled/>}/>
         
       </Routes>
     </Router>
