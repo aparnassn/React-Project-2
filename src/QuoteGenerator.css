@@ -1,0 +1,55 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff;
+}
+
+.quote-box{
+    background: #fff;
+    width: 40%;
+    margin: 10rem auto;
+    padding: 3rem;
+    border-radius: 5px;
+
+}
+
+.text{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.author{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.2rem;
+}
+
+.new-quote{
+background: #0059ff;
+border: none;
+color: #fff;
+padding: .7rem 1rem;
+font-size: .9rem;
+font-weight: bold;
+border-radius: 2px;
+} */
+
+.card{
+    width: 75%;
+    height: 50%;
+}
+
+.quote{
+    justify-content: center;
+}
+
+.author{
+    display: flex;
+    justify-content: flex-end;
+}
