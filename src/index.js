@@ -24,6 +24,10 @@ import UsingRefCode from "./UsingRefCode";
 import Shopper from "./ShoppingCart/Shopper";
 import Register from "./ShoppingCart/Register";
 import UsingStyled from "./UsingStyled";
+import QuoteGenerator from "./QuoteGenerator";
+import Pdf from "./Pdf";
+import UseAccordion from "./UseAccordion";
+import ColorPicker from "./ColorPicker";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -55,6 +59,10 @@ root.render(
         <Route path="/shopcart" element={<Shopper/>}/>
         <Route path="/signup" element={<Register/>}/>
         <Route path="/styled" element={<UsingStyled/>}/>
+        <Route path="/quotegenerator" element={<QuoteGenerator/>}/>
+        <Route path="/pdf" element={<Pdf/>}/>
+        <Route path="/useaccordion" element={<UseAccordion/>}/>
+        <Route path="/colorpicker" element={<ColorPicker/>}/>
         
       </Routes>
     </Router>
