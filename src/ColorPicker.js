@@ -1,7 +1,6 @@
 import React from "react";
 import { SketchPicker } from "react-color";
 import Button from "react-bootstrap/esm/Button";
-import styled from "styled-components";
 import { useState } from "react";
 
 function ColorPicker() {

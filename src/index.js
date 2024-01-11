@@ -28,6 +28,8 @@ import QuoteGenerator from "./QuoteGenerator";
 import Pdf from "./Pdf";
 import UseAccordion from "./UseAccordion";
 import ColorPicker from "./ColorPicker";
+//import UseRefHook from "./UseRefHook";
+import UseMemoHook from "./UseMemoHook";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -63,6 +65,8 @@ root.render(
         <Route path="/pdf" element={<Pdf/>}/>
         <Route path="/useaccordion" element={<UseAccordion/>}/>
         <Route path="/colorpicker" element={<ColorPicker/>}/>
+        {/* <Route path="/userefhook" element={<UseRefHook/>}/> */}
+        <Route path="/usememohook" element={<UseMemoHook/>}/>
         
       </Routes>
     </Router>
